@@ -15,7 +15,7 @@ pipeline {
                 sh '''
                 docker stop devops-container || true
                 docker rm devops-container || true
-                docker run -d -p 5000:5000 --name devops-container devops-app
+                docker run -d -p 4355:4355 --name devops-container devops-app
                 '''
             }
         }
