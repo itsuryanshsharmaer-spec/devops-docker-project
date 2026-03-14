@@ -6,7 +6,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t devops-app .'
+                sh 'docker build -t devops-app ./frontend'
             }
         }
 
